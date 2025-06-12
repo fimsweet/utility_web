@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "utilityweb"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "utilityweb-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
