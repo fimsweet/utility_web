@@ -1,0 +1,24 @@
+/* Import all CSS modules */
+
+/* Global Styles */
+@import './globals/variables.css';
+@import './globals/reset.css';
+
+/* Layout Styles */
+@import './layout/main-content.css';
+@import './layout/sidebar.css';
+@import './layout/grid.css';
+
+/* Component Styles */
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/forms.css';
+@import './components/headers.css';
+
+/* Page Styles */
+@import './pages/dashboard.css';
+@import './pages/task-study.css';
+@import './pages/projects.css';
+
+/* Utility Styles */
+@import './utilities/responsive.css';

@@ -1,0 +1,70 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .aria-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  
+  .quick-actions {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .chat-section {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .suggestions {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
+
+@media (max-width: 968px) {
+  .task-study-grid,
+  .hobbies-grid,
+  .finance-grid,
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .diary-mood-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .home-main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .diary-mood-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    padding: var(--spacing-lg);
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .page-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
