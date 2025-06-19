@@ -15,7 +15,7 @@
 .main-content {
   flex-grow: 1;
   margin-left: 260px; /* Account for fixed sidebar width */
-  padding: 50px 40px 40px 40px; /* Increased top padding further */
+  padding: 50px 60px 40px 60px; /* Increased horizontal padding */
   background-color: var(--bg-primary);
   overflow-y: auto;
   min-height: 100vh;

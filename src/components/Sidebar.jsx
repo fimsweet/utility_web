@@ -7,31 +7,30 @@ const NavLink = ({ item, isActive, onClick }) => (
     className={`sidebar-link ${isActive ? 'active' : ''}`}
     onClick={(e) => { e.preventDefault(); onClick(item.key); }}
   >
-    <span className="link-icon">{item.icon}</span>
     {item.label}
     {item.tag && <span className="link-tag">{item.tag}</span>}
   </a>
 );
 
 const MAIN_NAV_ITEMS = [
-  { key: 'dashboard', label: 'Dashboard', icon: '🏠' },
-  { key: 'task_study', label: 'Task & Study', icon: '📚' },
-  { key: 'projects', label: 'Projects', icon: '🎮' },
-  { key: 'hobbies', label: 'Hobbies', icon: '🎌' },
+  { key: 'dashboard', label: 'Dashboard' },
+  { key: 'task_study', label: 'Task & Study' },
+  { key: 'projects', label: 'Projects' },
+  { key: 'hobbies', label: 'Hobbies' },
 ];
 
 const PERSONAL_ITEMS = [
-  { key: 'diary_mood', label: 'Diary & Mood', icon: '📖' },
-  { key: 'finance', label: 'Finance', icon: '💰' },
+  { key: 'diary_mood', label: 'Diary & Mood' },
+  { key: 'finance', label: 'Finance' },
 ];
 
 const SYSTEM_ITEMS = [
-  { key: 'settings', label: 'Settings', icon: '⚙️' },
-  { key: 'aria_assistant', label: 'ARIA - Assistant', icon: '🤖', tag: 'AI' },
+  { key: 'settings', label: 'Settings' },
+  { key: 'aria_assistant', label: 'ARIA - Assistant', tag: 'AI' },
 ];
 
 const PLAYGROUND_ITEMS = [
-  { key: 'playground', label: 'All Playground', icon: '🎮' },
+  { key: 'playground', label: 'All Playground' },
 ];
 
 export default function Sidebar({ activeKey, setActiveKey }) {
